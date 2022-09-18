@@ -1,0 +1,11 @@
+{
+  "name": "zero_point_cirque",
+  "version": "1.0.0",
+  "description": "Sass du projet zéro point cirque",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "author": "Corentin Bernard",
+  "license": "ISC"
+}
