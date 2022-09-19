@@ -1,12 +1,24 @@
+$dark: #191919;
+$light: #e5e5e5;
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    color: $light;
+    padding: 3%;
+    font-family: mongoose, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
 
 .title {
-    color: white;
+    
 }
 
 .background_image {
@@ -20,11 +32,10 @@
 header {
     display: flex;
     flex-direction: row;
-    margin: 30px;
 }
 
 .logo {
-    width: 100px;
+    width: 9%;
 }
 
 .menu {
@@ -36,12 +47,12 @@ header {
     justify-content: space-evenly;
     list-style: none;
     &__item {
-        // margin: 0 30px;
-        color: white;
+        font-size: clamp(12px, 2.5vw, 50px);
+        color: $light;
+        text-transform: uppercase;
         &::after {
             width: 100px;
             height: 200px;
-
             background-color: white;
         }
     }
