@@ -1,1 +1,102 @@
-*,::before,::after{margin:0;padding:0;box-sizing:border-box}body{color:#fff;padding:3%;font-family:mongoose,sans-serif;font-weight:400;font-style:normal;text-decoration:none}.background_image{position:absolute;top:0;left:0;width:100%;z-index:-1}header{display:flex;flex-direction:row}.logo{width:9%}.menu{width:100%;margin-left:30px;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;list-style:none}.menu__item{font-size:clamp(12px, 2.5vw, 50px);color:#fff;text-transform:uppercase}.menu__item::after{width:100px;height:200px;background-color:#fff}.title{text-transform:uppercase;font-size:clamp(40px, 9vw, 180px);line-height:clamp(30px, 7vw, 135px)}.button{padding:5px 24px;border:none;cursor:pointer;background-color:#fff;font-size:clamp(12px,2.5vw, 50px);position:relative}.button::after{content:"";position:absolute;left:50px;top:50px;border:#fff 5px;display:block}/*# sourceMappingURL=style.css.map */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: mongoose, sans-serif;
+  font-weight: 400;
+}
+
+a,
+a:hover a:visited,
+a:active {
+  color: #191919;
+  text-decoration: none;
+}
+
+body {
+  color: #ffffff;
+  padding: 2% 4%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.logo {
+  width: 9%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.menu__item {
+  font-size: clamp(12px, 2.5vw, 50px);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.menu__item::after {
+  width: 100px;
+  height: 200px;
+  background-color: white;
+}
+
+main {
+  margin-left: 12%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(40px, 18vh, 180px);
+  line-height: clamp(25px, 13vh, 120px);
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: #ffffff;
+  border: 0;
+  padding: 10px 40px;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  font-size: clamp(12px, 2.5vw, 50px);
+  line-height: clamp(12px, 2.5vw, 50px);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.footer__item {
+  width: 3.5%;
+  margin: 0 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

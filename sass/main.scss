@@ -5,15 +5,28 @@ $light: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: mongoose, sans-serif;
+    font-weight: 400;
 }
+
+a,
+a:hover
+a:visited,
+a:active {
+    color: $dark;
+    text-decoration: none;
+}
+
 
 body {
     color: $light;
-    padding: 3%;
-    font-family: mongoose, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
+    padding: 2% 4%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .background_image {
@@ -27,6 +40,9 @@ body {
 header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
 }
 
 .logo {
@@ -35,7 +51,6 @@ header {
 
 .menu {
     width: 100%;
-    margin-left: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,25 +68,38 @@ header {
     }
 }
 
+main {
+    margin-left: 12%;
+}
+
 .title {
     text-transform: uppercase;
-    font-size: clamp(40px, 9vw, 180px);
-    line-height: clamp(30px, 7vw, 135px);
+    font-weight: 700;
+    font-size: clamp(40px, 18vh, 180px);
+    line-height: clamp(25px, 13vh, 120px);
+    margin-bottom: 40px;
 }
 
 .button {
-    padding: 5px 24px;
-    border: none;
-    cursor: pointer;
     background-color: $light;
-    font-size: clamp(12px,2.5vw, 50px);
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        left: 50px;
-        top: 50px;
-        border: $light 5px;
-        display: block;
+    border: 0;
+    padding: 10px 40px;
+    text-align: center;
+    color: $dark;
+    text-decoration: none;
+    font-size: clamp(12px, 2.5vw, 50px);
+    line-height: clamp(12px, 2.5vw, 50px);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    &__item {
+        width: 3.5%;
+        margin: 0 20px;
     }
 }
